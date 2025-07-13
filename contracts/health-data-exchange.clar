@@ -63,7 +63,7 @@
     max-price: uint,
     description: (string-utf8 256),
     timestamp: uint,
-            status: (string-ascii 20),
+    status: (string-utf8 20),
     matched-data-id: (optional uint)
   }
 )
@@ -217,7 +217,7 @@
         description: description,
         timestamp: block-height,
         status: "active",
-        matched-data-id: (none uint)
+        matched-data-id: none
       }
     )
     
